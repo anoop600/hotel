@@ -1,0 +1,29 @@
+.login{
+    margin-top: 20vh;
+}
+
+#dropdown1{
+    display: none;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(45deg, red, blue);
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+   
+  #boookingForm,  #bookHotel ,#cp,#cph{
+      display: none;
+  }
+ 
+  /* .card-panel{
+    background: linear-gradient(135deg, #F7A208 50%, #EEE315 , #09A0CB);
+} */
+
+
+
+  

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup page</title>
+    <script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="/static/js/booking.js"></script>
+    
+</head>
+<body class="grey lighten-5">
+    <div class="container  ">
+    <div class="row center ">
+        <div class="col offset-l3 l6 s12">
+                
+            <div class="card-panel  blue lighten-5 ">
+            <nav>
+                <div class="nav-wrapper blue darken-2">
+                    <a href="#" class="brand-logo center " ><i>SignUp</i></a>
+                </div>
+            </nav>
+                <div class="row ">
+                    <form class="col s12 " action="#">
+                        <div class="row ">
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input  id="custName" type="text"  placeholder="Name" class="validate" autocomplete required="">
+                                    <span class="helper-text" data-error="Enter Porper name" data-success="verfied"></span>                           
+                                </div>
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input  id="custMobile" type="tel"  placeholder="Mobile No." pattern="[0-9]{10,10}" class="validate" autocomplete required="">    
+                                    <span class="helper-text" data-error="Enter Porper Mobile number" data-success="verfied">enter your mobile number of 10 digit without any code </span>
+                                </div>
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="custEmail" placeholder="emailid" type="email" class="validate" autocomplete  required="">
+                                    <span class="helper-text" data-error="Enter Porper emaile id"  data-success="verfied">email-id should be of format __@__.__</span> 
+                                </div>
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock_open</i>
+                                    <input  id="custPassword" type="password" pattern=".{5,15}" placeholder="New-Password"  required=""> 
+                                    <span class="helper-text" data-error="password should be 5-15 characters"  data-success="verfied"></span> 
+                                    
+                            </div>
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input  id="custRPassword"  pattern=".{5,15}" type="password" placeholder="Re-Enter-Password"  required="">  
+                                    <span class="helper-text" data-error="password should match with preivious be 5-15 characters"  data-success="verfied"></span> 
+                                    
+                            </div>
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">place</i>
+                                    <input   id="custCity" type="text" placeholder="City"class="validate" autocomplete required=""> 
+                                    <span class="helper-text" data-error="city should match with preivious be 3-25 characters"  data-success="verfied"></span> 
+                                    
+                            </div>
+                            <div class="input-field  col s12">
+                                    <i class="material-icons prefix">place</i>
+                                    <input   id="custState" type="text" placeholder="State"class="validate" autocomplete required=""> 
+                                    <span class="helper-text" data-error="state should match with preivious be 3-25 characters"  data-success="verfied"></span> 
+                                    
+                            </div>
+                           
+                            <div class="input-field col s12" >
+                                    
+                                <a class="waves-effect waves-light btn-small left blue darken-3" id="goBack" href="javascript:" onclick="goBack()">
+                                        <i class="material-icons left">arrow_back</i>
+                                        Back
+                                </a>
+                                <a type="submit"  class="waves-effect waves-light btn-small right blue darken-3" id="signInCustomer" href="javascript:" onclick="signInCustomer()">
+                                    <i class="material-icons right ">send</i>
+                                    Signup
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

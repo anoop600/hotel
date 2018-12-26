@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    
+    <script src="/static/js/booking.js"></script>
+    <link href="/static/css/booking.css" rel="stylesheet">
+<body class="grey lighten-5" onload="hideShow()">
+    <header>    
+        <nav class="blue darken-1">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo left"><img src="/static/images/logo.png" alt="">Hotel booking</a>
+              <ul id="nav-mobile" class="right">
+                <li class="logged"><a href="/static/login.html">LogIn</a></li>
+                <li class="logged"><a href="/static/signup.html">Signup</a></li>
+                <li><a href="https://www.google.co.in/maps">See in Map</a></li>
+                <li class="signedIn"><i class="material-icons prefix ">account_circle</i></li>
+                <li class="signedIn"> <a><script>document.write(JSON.parse(window.localStorage.getItem("customer"))[0].split('@')[0])</script></a></li>
+              </ul>
+              
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+        <div class="row center">
+            <h1><i>Book your hotel</i></h1>
+        </div>
+        <div class="card-panel" id="mainForm">
+        <div class="row" >
+            <div class="col s12 m6 left">
+                <input id="city" type="text" class="input-field" placeholder="enter city" required>
+                <a class="waves-effect waves-light btn blue" href="javascript:" onclick="findHotel()">Find hotels</a>
+            
+            </div>
+            <div  class="col s12 m6 ">
+                    <input id="cityLP" type="text" class="input-field" placeholder="enter city for low charges of hotel" required>
+                    <a class="waves-effect waves-light btn blue" href="javascript:" onclick="findHotelByLowestPrice()">Find hotels By Lowest Price </a>
+            </div>
+        </div>
+    </div>
+    <div class="row center">
+        <div  class="card-panel" id="cph">
+                <div id="hotels" class="row"></div>
+        </div>
+    </div>
+
+    
+        
+        <div class="card-panel " id="cp">
+            <div id="bookHotel">
+                <h5>Shortlisted the Hotel?<then</h5>
+                <a class="waves-effect waves-light btn blue" href="javascript:" onclick="bookHotel()">Book your hotel</a>
+            </div> 
+            <div class="row" id="boookingForm">
+                    <div class="col  s6 ">
+                            <label>Select Check-In Date</label>
+                                <input type="date" class=" input-field" placeholder="Select Check-In Date" id="checkIn"  
+                                 min="2018-12-03" max="2018-12-31" required>
+                        </div>
+                        <div class="col  s6 ">
+                                <label>Select Check-Out Date</label>
+                                <input type="date" class=" input-field" placeholder="Select Check-Out Date" id="checkOut"
+                                 min="2018-12-03" max="2018-12-31" required>
+                        </div>
+                        <div class="col  s6 ">
+                                <input  id="roomCount" type="number" class="input-field" placeholder="number of rooms" min="1" max="5" required>
+                        </div> 
+                        <div class="col s6 ">
+                                <input  id="finalCity" type="text" class="input-field" placeholder="enter city" required>
+                                
+                        </div>
+                        <div class="col s5 m4">
+                                <input    id="hotelName" type="text" class="input-field" placeholder="enter Hotel Name" required>
+                                
+                        </div>
+                        <div class="col offset-m2 s12 m6 ">
+                            <a class="waves-effect waves-light btn blue" href="javascript:" onclick="checkAvailability()">Check Room Availability</a>
+                        </div>
+            </div>
+        </div>
+        </div>
+        </main>
+    
+        
+        
+           
+            
+          
+            <footer class="grey">  
+                    <div class="footer-copyright">
+                            <div class="container center">
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="material-icons">favorite_border</i> by <b>Rakhi</b>
+                                    <a class="waves-effect waves-light btn-small signedIn right  blue darken-1" id="logIn" href="javascript:" onclick="logOut()">
+                                            <i class="material-icons right ">send</i>
+                                            Logout
+                                        </a> 
+                            </div>
+                    </div> 
+                   
+            </footer>
+
+             <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>

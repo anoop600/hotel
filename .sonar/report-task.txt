@@ -1,0 +1,6 @@
+projectKey=DatabaseDesign2
+serverUrl=http://localhost:8081
+serverVersion=7.1.0.11001
+dashboardUrl=http://localhost:8081/dashboard/index/DatabaseDesign2
+ceTaskId=AWd49DjhUPaLLhr96Obi
+ceTaskUrl=http://localhost:8081/api/ce/task?id=AWd49DjhUPaLLhr96Obi

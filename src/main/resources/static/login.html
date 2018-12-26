@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup page</title>
+    <script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/booking.js"></script>
+    <link href="/static/css/booking.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    
+</head>
+<body class="login grey lighten-5">
+    <div class="container  ">
+    <div class="row center ">
+        <div class="col offset-l2 l8">
+                
+            <div class="card-panel  blue lighten-5 ">
+            <nav>
+                <div class="nav-wrapper blue darken-2">
+                    <a href="#" class="brand-logo center " ><i>LogIn</i></a>
+                </div>
+            </nav>
+            <div class="row ">
+                    <form class="col s12 ">
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="custEmailLogin" placeholder="emailid" type="email" class="validate" autocomplete  required="">
+                                    <span class="helper-text" data-error="Enter Porper emaile id"  data-success="verfied">email-id should be of format __@__.__</span> 
+                                 </div>
+                            <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock_open</i>
+                                    <input id="custPasswordLogin" type="password" placeholder="New-Password"  required>    
+                                    <span class="helper-text" data-error="password should be 5-15 characters"  data-success="verfied"></span> 
+                                    
+                                </div>
+                            <div class="input-field col right " >
+                                    
+                                <a class="waves-effect waves-light btn-small   blue darken-3" id="logIn" href="javascript:" onclick="logIn()">
+                                        <i class="material-icons right">send</i>
+                                        Login
+                                    </a>
+                                
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
